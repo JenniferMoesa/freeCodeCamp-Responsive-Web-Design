@@ -160,6 +160,76 @@ And that link will take you to the web address https://www.freecodecamp.org.
 
 ---------------------------------------------------------------------------------------------------------------------------
 
+LINK TO INTERNAL SECTIONS OF A PAGE WITH ANCHOR ELEMENTS
+
+a (anchor) elements can also be used to create internal links to jump to different sections within a webpage.
+
+To create an internal link, you assign a link's href attribute to a hash symbol #
+plus the value of the id attribute for the element that you want to internally link to, usually further down the page.
+You then need to add the same id attribute to the element you are linking to. An id is an attribute that uniquely describes an element.
+
+Below is an example of an internal anchor link and its target element:
+
+<a href="#contacts-header">Contacts</a>
+...
+<h2 id="contacts-header">Contacts</h2>
+When users click the Contacts link, they'll be taken to the section of the webpage with the Contacts header element.
+
+Example:
+<a href="#footer">jump to bottom</a>
+...
+<footer id="footer">Copyright Cat Photo App</footer>
+
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+NEST AN ANCHOR ELEMENT WITHIN A PARAGRAPH
+
+You can nest links within other text elements.
+
+<p>
+  Here's a <a target="_blank" href="https://www.freecodecamp.org"> link to www.freecodecamp.org</a> for you to follow.
+</p>
+
+Let's break down the example. Normal text is wrapped in the p element:
+
+<p> Here's a ... for you to follow. </p>
+Next is the anchor element <a> (which requires a closing tag </a>):
+
+<a> ... </a>
+target is an anchor tag attribute that specifies where to open the link. The value _blank specifies to open the link in a new tab.
+The href is an anchor tag attribute that contains the URL address of the link:
+<a href="https://www.freecodecamp.org" target="_blank"> ... </a>
+
+The text, link to www.freecodecamp.org, within the a element is called anchor text, and will display the link to click:
+<a href=" ... " target="...">link to freecodecamp.org</a>
+
+The final output of the example will look like this:
+
+Here's a (underlined ->) link to www.freecodecamp.org (<-underlined) for you to follow.
+
+Example:
+<p>View more 
+  <a href="https://www.freecatphotoapp.com" target="_blank">cat photos</a>
+</p>
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+MAKE DEAD LINKS USING THE HASH SYMBOL
+
+Sometimes you want to add anchor elements to your website before you know where they will link.
+
+This is also handy when you're changing the behavior of a link using JavaScript, which we'll learn about later.
+
+Example:
+<p>Click here to view more <a href="#" target="_blank">cat photos</a>.</p>
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
 
 
 
