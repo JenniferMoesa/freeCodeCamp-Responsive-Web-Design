@@ -226,8 +226,29 @@ Example:
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
+TURN AN IMAGE INTO A LINK
 
+You can make elements into links by nesting them within an a element.
 
+Nest your image within an anchor element. Here's an example:
+<a href="#"><img src="https://www.bit.ly/fcc-running-cats" alt="Three kittens running towards the camera."></a>
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+CREATE A BULLETED UNORDERED LIST
+HTML has a special element for creating unordered lists, or bullet point style lists.
+
+Unordered lists start with an opening <ul> element, followed by any number of <li> elements.
+Finally, unordered lists close with a </ul>.
+
+For example:
+
+<ul>
+  <li>apples</li>
+  <li>oranges</li>
+</ul>
+
+-------------------------------------------------------------------------------------------------------------------------------
 
 
 
